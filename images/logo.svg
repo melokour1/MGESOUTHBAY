@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Outer ring -->
+  <circle cx="200" cy="200" r="195" fill="#1b2d4f"/>
+  <circle cx="200" cy="200" r="170" fill="#e8813a"/>
+
+  <!-- Sky gradient -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e85d3a"/>
+      <stop offset="40%" stop-color="#e8813a"/>
+      <stop offset="70%" stop-color="#f0a030"/>
+      <stop offset="100%" stop-color="#2d8a8a"/>
+    </linearGradient>
+    <clipPath id="innerClip">
+      <circle cx="200" cy="200" r="168"/>
+    </clipPath>
+  </defs>
+
+  <circle cx="200" cy="200" r="168" fill="url(#sky)"/>
+
+  <g clip-path="url(#innerClip)">
+    <!-- Sun -->
+    <circle cx="200" cy="160" r="50" fill="#f0a030" opacity="0.8"/>
+    <!-- Sun rays -->
+    <g stroke="#f0a030" stroke-width="2" opacity="0.5">
+      <line x1="200" y1="100" x2="200" y2="85"/>
+      <line x1="230" y1="105" x2="240" y2="92"/>
+      <line x1="250" y1="125" x2="263" y2="118"/>
+      <line x1="170" y1="105" x2="160" y2="92"/>
+      <line x1="150" y1="125" x2="137" y2="118"/>
+    </g>
+
+    <!-- Ocean -->
+    <rect x="30" y="230" width="340" height="30" fill="#2d8a8a" opacity="0.7"/>
+    <path d="M30 235 Q70 228 110 235 Q150 242 190 235 Q230 228 270 235 Q310 242 350 235 Q370 232 370 235" fill="none" stroke="#3aaa9a" stroke-width="2"/>
+
+    <!-- Sand -->
+    <rect x="30" y="255" width="340" height="120" fill="#d4a855"/>
+
+    <!-- Road -->
+    <rect x="100" y="280" width="200" height="25" fill="#666" rx="3"/>
+    <line x1="150" y1="292" x2="170" y2="292" stroke="#fff" stroke-width="2" stroke-dasharray="8 6"/>
+    <line x1="200" y1="292" x2="220" y2="292" stroke="#fff" stroke-width="2" stroke-dasharray="8 6"/>
+    <line x1="250" y1="292" x2="270" y2="292" stroke="#fff" stroke-width="2" stroke-dasharray="8 6"/>
+
+    <!-- Lifeguard tower -->
+    <g transform="translate(200,175)">
+      <!-- Legs -->
+      <line x1="-25" y1="0" x2="-35" y2="55" stroke="#8B4513" stroke-width="4"/>
+      <line x1="25" y1="0" x2="35" y2="55" stroke="#8B4513" stroke-width="4"/>
+      <line x1="-15" y1="25" x2="15" y2="25" stroke="#8B4513" stroke-width="3"/>
+      <!-- Platform -->
+      <rect x="-30" y="-5" width="60" height="5" fill="#8B4513"/>
+      <!-- Cabin -->
+      <rect x="-25" y="-40" width="50" height="35" fill="#c0392b" stroke="#8B4513" stroke-width="2"/>
+      <!-- Roof -->
+      <polygon points="-30,-40 0,-55 30,-40" fill="#1b2d4f"/>
+      <!-- Window -->
+      <rect x="-15" y="-32" width="30" height="15" fill="#f0d890" stroke="#8B4513" stroke-width="1.5"/>
+      <line x1="0" y1="-32" x2="0" y2="-17" stroke="#8B4513" stroke-width="1"/>
+    </g>
+
+    <!-- Car 1 (left) -->
+    <g transform="translate(130,268)">
+      <rect x="0" y="0" width="45" height="15" rx="3" fill="#fff" stroke="#333" stroke-width="1"/>
+      <rect x="8" y="-8" width="30" height="10" rx="2" fill="#ddd" stroke="#333" stroke-width="1"/>
+      <circle cx="10" cy="16" r="5" fill="#333"/>
+      <circle cx="35" cy="16" r="5" fill="#333"/>
+    </g>
+
+    <!-- Car 2 (right) -->
+    <g transform="translate(225,270)">
+      <rect x="0" y="0" width="50" height="18" rx="3" fill="#1b2d4f" stroke="#333" stroke-width="1"/>
+      <rect x="8" y="-8" width="35" height="10" rx="2" fill="#2a3d5f" stroke="#333" stroke-width="1"/>
+      <circle cx="12" cy="19" r="5.5" fill="#333"/>
+      <circle cx="40" cy="19" r="5.5" fill="#333"/>
+    </g>
+
+    <!-- Crossed wrenches -->
+    <g transform="translate(200,330)">
+      <g transform="rotate(-30)">
+        <rect x="-4" y="-30" width="8" height="60" rx="2" fill="#888" stroke="#666" stroke-width="1"/>
+        <circle cx="0" cy="-28" r="7" fill="#888" stroke="#666" stroke-width="1"/>
+        <circle cx="0" cy="-28" r="3" fill="#666"/>
+        <circle cx="0" cy="28" r="7" fill="#888" stroke="#666" stroke-width="1"/>
+        <circle cx="0" cy="28" r="3" fill="#666"/>
+      </g>
+      <g transform="rotate(30)">
+        <rect x="-4" y="-30" width="8" height="60" rx="2" fill="#999" stroke="#666" stroke-width="1"/>
+        <circle cx="0" cy="-28" r="7" fill="#999" stroke="#666" stroke-width="1"/>
+        <circle cx="0" cy="-28" r="3" fill="#666"/>
+        <circle cx="0" cy="28" r="7" fill="#999" stroke="#666" stroke-width="1"/>
+        <circle cx="0" cy="28" r="3" fill="#666"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Text on outer ring -->
+  <defs>
+    <path id="topArc" d="M 60,200 A 140,140 0 0,1 340,200"/>
+    <path id="bottomArc" d="M 340,210 A 140,140 0 0,1 60,210"/>
+  </defs>
+  <text fill="white" font-family="Arial Black, sans-serif" font-size="36" font-weight="bold" letter-spacing="6">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">SOUTH BAY</textPath>
+  </text>
+  <text fill="white" font-family="Arial Black, sans-serif" font-size="32" font-weight="bold" letter-spacing="4">
+    <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">MGE California</textPath>
+  </text>
+</svg>
