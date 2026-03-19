@@ -84,7 +84,7 @@ img {
 }
 
 header {
-  background: var(--primary);
+  background: #02314b;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -106,9 +106,10 @@ header .container {
 }
 
 .logo-img {
-  width: 60px;
-  height: 60px;
+  width: 64px;
+  height: 64px;
   object-fit: contain;
+  display: block;
 }
 
 .logo h1 {
