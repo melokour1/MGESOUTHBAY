@@ -110,7 +110,6 @@ header .container {
   height: 60px;
   object-fit: cover;
   border: none;
-  mix-blend-mode: multiply;
 }
 
 .logo h1 {
@@ -1097,7 +1096,6 @@ footer {
   width: 55px;
   height: 55px;
   border: none;
-  mix-blend-mode: multiply;
 }
 
 .footer-logo span {
