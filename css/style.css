@@ -1249,6 +1249,7 @@ footer {
   }
 
   .nav-close {
+    display: block !important;
     position: absolute;
     top: 22px;
     right: 22px;
