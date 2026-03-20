@@ -1,4 +1,10 @@
 {
+  "rewrites": [
+    {
+      "source": "/api/appointment",
+      "destination": "https://mohammedelokour.app.n8n.cloud/webhook/mge-appointment"
+    }
+  ],
   "routes": [
     { "handle": "filesystem" },
     { "src": "/(.*)", "status": 404, "dest": "/404.html" }
