@@ -756,6 +756,10 @@ nav ul li a.btn-appointment:hover {
   border-radius: 12px;
 }
 
+.alignment-visual {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
 .values-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
