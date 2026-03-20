@@ -8,15 +8,15 @@
 }
 
 :root {
-  --primary: #1a1a2e;
-  --secondary: #c0392b;
-  --accent: #e74c3c;
-  --gold: #f39c12;
-  --light: #f5f5f5;
-  --white: #ffffff;
-  --dark: #0f0f1a;
-  --gray: #7f8c8d;
-  --text: #2c3e50;
+  --primary: #0D2B3E;
+  --secondary: #E4572E;
+  --accent: #C63D1E;
+  --teal: #2A9D8F;
+  --light: #F4F4F4;
+  --white: #FFFFFF;
+  --dark: #0B2A3A;
+  --gray: #B0BEC5;
+  --text: #1C1C1C;
   --font-main: 'Montserrat', sans-serif;
   --font-heading: 'Oswald', sans-serif;
 }
@@ -52,10 +52,42 @@ img {
   padding: 0 20px;
 }
 
+/* ===== GENERAL LINK STYLING ===== */
+p a,
+.card-body a,
+.section a:not(.btn):not(.btn-primary):not(.btn-outline):not(.btn-appointment):not(.logo):not(.breadcrumb a) {
+  color: var(--teal);
+  transition: color 0.2s;
+}
+
+p a:hover,
+.card-body a:hover,
+.section a:not(.btn):not(.btn-primary):not(.btn-outline):not(.btn-appointment):not(.logo):not(.breadcrumb a):hover {
+  color: var(--secondary);
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--teal);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+
 /* ===== HEADER / NAV ===== */
 .top-bar {
-  background: #011e2e;
-  color: rgba(255,255,255,0.7);
+  background: var(--dark);
+  color: var(--gray);
   font-size: 0.8rem;
   padding: 7px 0;
   border-bottom: 1px solid rgba(255,255,255,0.06);
@@ -69,12 +101,12 @@ img {
 }
 
 .top-bar a {
-  color: var(--gold);
+  color: var(--white);
   transition: color 0.2s;
 }
 
 .top-bar a:hover {
-  color: var(--white);
+  color: var(--secondary);
 }
 
 .top-bar .hours {
@@ -84,7 +116,7 @@ img {
 }
 
 header {
-  background: #02314b;
+  background: var(--primary);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -130,7 +162,7 @@ header .container {
 .logo h1 span {
   display: block;
   font-size: 0.58rem;
-  color: var(--gold);
+  color: var(--gray);
   letter-spacing: 3px;
   font-weight: 400;
   font-family: var(--font-main);
@@ -150,7 +182,7 @@ nav ul {
 }
 
 nav ul li a {
-  color: rgba(255,255,255,0.72);
+  color: var(--white);
   font-size: 0.76rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -163,7 +195,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-  color: var(--white);
+  color: var(--secondary);
   background: rgba(255,255,255,0.1);
 }
 
@@ -181,6 +213,7 @@ nav ul li a.btn-appointment {
 
 nav ul li a.btn-appointment:hover {
   background: var(--accent);
+  color: var(--white);
 }
 
 .hamburger {
@@ -202,7 +235,7 @@ nav ul li a.btn-appointment:hover {
 
 /* ===== HERO ===== */
 .hero {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+  background: linear-gradient(135deg, #0D2B3E 0%, #123F5A 100%);
   color: var(--white);
   padding: 100px 0 80px;
   position: relative;
@@ -238,12 +271,12 @@ nav ul li a.btn-appointment:hover {
 }
 
 .hero-content h2 span {
-  color: var(--gold);
+  color: var(--teal);
 }
 
 .hero-content p {
   font-size: 1.15rem;
-  color: rgba(255,255,255,0.8);
+  color: var(--gray);
   margin-bottom: 30px;
   max-width: 500px;
 }
@@ -267,8 +300,8 @@ nav ul li a.btn-appointment:hover {
 }
 
 .badge.gold {
-  border-color: var(--gold);
-  color: var(--gold);
+  border-color: var(--teal);
+  color: var(--teal);
 }
 
 .hero-buttons {
@@ -298,13 +331,13 @@ nav ul li a.btn-appointment:hover {
 .btn-primary:hover {
   background: var(--accent);
   transform: translateY(-2px);
-  box-shadow: 0 5px 20px rgba(231,76,60,0.4);
+  box-shadow: 0 4px 15px rgba(228, 87, 46, 0.4);
 }
 
 .btn-outline {
   background: transparent;
   color: var(--white);
-  border: 2px solid rgba(255,255,255,0.3);
+  border: 2px solid var(--white);
 }
 
 .btn-outline:hover {
@@ -322,7 +355,7 @@ nav ul li a.btn-appointment:hover {
 .hero-graphic {
   width: 350px;
   height: 350px;
-  background: radial-gradient(circle, rgba(192,57,43,0.3) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(42,157,143,0.3) 0%, transparent 70%);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -366,6 +399,11 @@ nav ul li a.btn-appointment:hover {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.section-dark .section-title h2 {
+  color: var(--white);
 }
 
 .section-title .underline {
@@ -401,7 +439,7 @@ nav ul li a.btn-appointment:hover {
   text-align: center;
   transition: all 0.3s;
   box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-  border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(42, 157, 143, 0.15);
 }
 
 .service-card:hover {
@@ -412,7 +450,7 @@ nav ul li a.btn-appointment:hover {
 .service-card .icon {
   width: 70px;
   height: 70px;
-  background: linear-gradient(135deg, var(--secondary), var(--accent));
+  background: var(--teal);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -420,6 +458,11 @@ nav ul li a.btn-appointment:hover {
   margin: 0 auto 20px;
   font-size: 1.8rem;
   color: var(--white);
+  transition: background 0.3s;
+}
+
+.service-card:hover .icon {
+  background: var(--secondary);
 }
 
 .service-card h3 {
@@ -493,8 +536,8 @@ nav ul li a.btn-appointment:hover {
 }
 
 .service-detail-card .card-body ul li::before {
-  content: '✓';
-  color: var(--secondary);
+  content: '\2713';
+  color: var(--teal);
   font-weight: 700;
 }
 
@@ -513,7 +556,7 @@ nav ul li a.btn-appointment:hover {
 .feature-item .number {
   font-family: var(--font-heading);
   font-size: 3rem;
-  color: var(--gold);
+  color: var(--teal);
   font-weight: 700;
   line-height: 1;
   margin-bottom: 10px;
@@ -540,7 +583,7 @@ nav ul li a.btn-appointment:hover {
 }
 
 .testimonial-card {
-  background: var(--white);
+  background: var(--primary);
   padding: 35px;
   border-radius: 10px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.08);
@@ -548,7 +591,7 @@ nav ul li a.btn-appointment:hover {
 }
 
 .testimonial-card::before {
-  content: '"';
+  content: '\201C';
   font-family: Georgia, serif;
   font-size: 5rem;
   color: var(--secondary);
@@ -560,14 +603,14 @@ nav ul li a.btn-appointment:hover {
 }
 
 .testimonial-card .stars {
-  color: var(--gold);
+  color: var(--secondary);
   font-size: 1rem;
   margin-bottom: 15px;
 }
 
 .testimonial-card p {
   font-style: italic;
-  color: var(--gray);
+  color: var(--white);
   margin-bottom: 20px;
   line-height: 1.8;
   position: relative;
@@ -576,12 +619,12 @@ nav ul li a.btn-appointment:hover {
 
 .testimonial-card .author {
   font-weight: 600;
-  color: var(--text);
+  color: var(--gray);
 }
 
 /* ===== CTA BANNER ===== */
 .cta-banner {
-  background: linear-gradient(135deg, var(--secondary), #962d22);
+  background: linear-gradient(135deg, var(--secondary), var(--accent));
   color: var(--white);
   padding: 60px 0;
   text-align: center;
@@ -606,8 +649,8 @@ nav ul li a.btn-appointment:hover {
 }
 
 .cta-banner .btn:hover {
-  background: var(--gold);
-  color: var(--white);
+  background: var(--light);
+  color: var(--accent);
 }
 
 /* ===== TEAM ===== */
@@ -654,7 +697,7 @@ nav ul li a.btn-appointment:hover {
 }
 
 .team-card .role {
-  color: var(--secondary);
+  color: var(--teal);
   font-weight: 600;
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -761,7 +804,7 @@ nav ul li a.btn-appointment:hover {
 .form-group textarea {
   width: 100%;
   padding: 12px 16px;
-  border: 2px solid #e0e0e0;
+  border: 2px solid var(--gray);
   border-radius: 6px;
   font-family: var(--font-main);
   font-size: 0.95rem;
@@ -773,7 +816,7 @@ nav ul li a.btn-appointment:hover {
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--secondary);
+  border-color: var(--teal);
 }
 
 .form-group textarea {
@@ -817,7 +860,7 @@ nav ul li a.btn-appointment:hover {
 .info-item .icon {
   width: 40px;
   height: 40px;
-  background: var(--secondary);
+  background: var(--teal);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -872,7 +915,7 @@ nav ul li a.btn-appointment:hover {
 .warranty-card .card-top .highlight {
   font-family: var(--font-heading);
   font-size: 2.5rem;
-  color: var(--gold);
+  color: var(--teal);
   margin-top: 10px;
 }
 
@@ -1000,7 +1043,7 @@ nav ul li a.btn-appointment:hover {
 .contact-item .icon {
   width: 45px;
   height: 45px;
-  background: linear-gradient(135deg, var(--secondary), var(--accent));
+  background: var(--teal);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1024,7 +1067,7 @@ nav ul li a.btn-appointment:hover {
 
 /* ===== PAGE HERO (inner pages) ===== */
 .page-hero {
-  background: linear-gradient(135deg, var(--primary), var(--dark));
+  background: linear-gradient(135deg, #0D2B3E, #123F5A);
   color: var(--white);
   padding: 60px 0;
   text-align: center;
@@ -1039,22 +1082,22 @@ nav ul li a.btn-appointment:hover {
 }
 
 .page-hero p {
-  color: rgba(255,255,255,0.7);
+  color: var(--gray);
   font-size: 1.05rem;
 }
 
 .breadcrumb {
   margin-top: 15px;
   font-size: 0.85rem;
-  color: rgba(255,255,255,0.5);
+  color: var(--gray);
 }
 
 .breadcrumb a {
-  color: var(--gold);
+  color: var(--teal);
 }
 
 .breadcrumb a:hover {
-  color: var(--white);
+  color: var(--secondary);
 }
 
 /* ===== TIRES PAGE ===== */
@@ -1093,8 +1136,9 @@ nav ul li a.btn-appointment:hover {
 /* ===== FOOTER ===== */
 footer {
   background: var(--dark);
-  color: rgba(255,255,255,0.7);
+  color: var(--gray);
   padding: 60px 0 0;
+  border-top: 2px solid var(--teal);
 }
 
 .footer-grid {
@@ -1150,13 +1194,14 @@ footer {
 }
 
 .footer-col ul li a:hover {
-  color: var(--gold);
+  color: var(--secondary);
 }
 
 .footer-bottom {
   padding: 20px 0;
   text-align: center;
   font-size: 0.85rem;
+  color: var(--gray);
 }
 
 /* ===== RESPONSIVE ===== */
@@ -1210,7 +1255,7 @@ footer {
     right: -300px;
     width: 300px;
     height: 100vh;
-    background: #011e2e;
+    background: var(--primary);
     transition: right 0.3s ease;
     z-index: 2000;
     padding: 80px 30px 30px;

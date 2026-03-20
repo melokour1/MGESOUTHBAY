@@ -1,0 +1,22 @@
+{
+  "name": "mge-southbay",
+  "version": "1.0.0",
+  "description": "MGE California - Premier Auto Service & Repair website",
+  "scripts": {
+    "test": "echo \"No tests configured\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/autoexposhop-ux/MGESOUTHBAY.git"
+  },
+  "keywords": ["auto-repair", "static-site"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/autoexposhop-ux/MGESOUTHBAY/issues"
+  },
+  "homepage": "https://github.com/autoexposhop-ux/MGESOUTHBAY#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
