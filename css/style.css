@@ -685,6 +685,13 @@ nav ul li a.btn-appointment:hover {
   color: rgba(255,255,255,0.2);
 }
 
+.team-card .avatar-photo {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
 .team-card .info {
   padding: 25px;
 }
@@ -747,6 +754,10 @@ nav ul li a.btn-appointment:hover {
   object-fit: cover;
   display: block;
   border-radius: 12px;
+}
+
+.alignment-visual {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
 .values-grid {
