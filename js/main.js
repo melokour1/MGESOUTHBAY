@@ -25,6 +25,27 @@ document.querySelectorAll('nav ul li a').forEach(function(link) {
   link.addEventListener('click', closeNav);
 });
 
+// Swipe-left to close nav drawer
+(function() {
+  if (!nav) return;
+  var touchStartX = 0;
+  var touchStartY = 0;
+
+  nav.addEventListener('touchstart', function(e) {
+    touchStartX = e.changedTouches[0].clientX;
+    touchStartY = e.changedTouches[0].clientY;
+  }, { passive: true });
+
+  nav.addEventListener('touchend', function(e) {
+    var dx = e.changedTouches[0].clientX - touchStartX;
+    var dy = e.changedTouches[0].clientY - touchStartY;
+    // Swipe left: negative dx > 50px and more horizontal than vertical
+    if (dx < -50 && Math.abs(dx) > Math.abs(dy)) {
+      closeNav();
+    }
+  }, { passive: true });
+})();
+
 // FAQ Accordion
 document.querySelectorAll('.faq-question').forEach(function(question) {
   question.addEventListener('click', function() {

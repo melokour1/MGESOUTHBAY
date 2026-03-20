@@ -1308,6 +1308,33 @@ footer {
     border-bottom: none;
   }
 
+  /* Tap highlight / ripple on mobile nav links */
+  nav ul li a {
+    position: relative;
+    overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  nav ul li a:active {
+    background: rgba(228, 87, 46, 0.25);
+    transition: background 0s;
+  }
+
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--secondary);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+  }
+
+  nav ul li a:active::after {
+    opacity: 0.18;
+    transition: opacity 0s;
+  }
+
   .nav-close {
     display: block !important;
     position: absolute;
@@ -1357,5 +1384,43 @@ footer {
   .top-bar .container {
     justify-content: center;
     text-align: center;
+  }
+}
+
+/* ===== STICKY BOOK NOW (mobile only) ===== */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 60px;
+  }
+
+  .sticky-book-now {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1900;
+    background: var(--secondary);
+    color: var(--white);
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 16px 20px;
+    text-decoration: none;
+    display: block;
+    box-shadow: 0 -2px 12px rgba(0,0,0,0.25);
+    transition: background 0.2s;
+  }
+
+  .sticky-book-now:active {
+    background: var(--accent);
+  }
+}
+
+@media (min-width: 769px) {
+  .sticky-book-now {
+    display: none;
   }
 }
