@@ -5,8 +5,12 @@
       "destination": "https://mohammedelokour.app.n8n.cloud/webhook/mge-appointment"
     }
   ],
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "status": 404, "dest": "/404.html" }
+  "headers": [
+    {
+      "source": "/api/appointment",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store" }
+      ]
+    }
   ]
 }
