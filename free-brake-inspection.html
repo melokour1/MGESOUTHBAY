@@ -176,32 +176,6 @@
       margin: 0;
     }
 
-    /* Testimonial cards */
-    .testimonial-card {
-      background: #fff;
-      border-radius: 10px;
-      padding: 28px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
-      border-left: 4px solid #2A9D8F;
-    }
-    .testimonial-card p.quote {
-      color: #37474F;
-      font-size: 0.95rem;
-      font-style: italic;
-      margin-bottom: 14px;
-    }
-    .testimonial-card p.attribution {
-      color: #2A9D8F;
-      font-weight: 700;
-      font-size: 0.85rem;
-      margin: 0;
-    }
-    .stars {
-      color: #E8C14B;
-      font-size: 1rem;
-      margin-bottom: 10px;
-    }
-
     /* Service area cities */
     .cities-grid {
       display: flex;
@@ -318,6 +292,87 @@
       color: rgba(255,255,255,0.45);
     }
 
+    /* Landing page minimal header */
+    .lp-header {
+      background: var(--primary, #0D2B3E);
+      border-bottom: 2px solid #2A9D8F;
+      padding: 0;
+      position: sticky;
+      top: 0;
+      z-index: 2100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    }
+    .lp-header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+      padding: 0 20px;
+    }
+    .lp-header .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    .lp-header .logo-img {
+      height: 44px;
+      width: auto;
+    }
+    .lp-header .logo h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1rem;
+      color: #fff;
+      text-transform: uppercase;
+      line-height: 1.2;
+      margin: 0;
+    }
+    .lp-header .logo h1 span {
+      font-size: 0.65rem;
+      color: #2A9D8F;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      text-transform: none;
+    }
+    .lp-header-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .lp-header-phone {
+      color: #B0BEC5;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .lp-header-phone:hover {
+      color: #fff;
+    }
+    @media (max-width: 540px) {
+      .lp-header .logo h1 {
+        display: none;
+      }
+      .lp-header-phone {
+        display: none;
+      }
+    }
+
+    /* Hero image */
+    .hero-image-wrap {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 16px 60px rgba(0,0,0,0.45);
+      max-width: 480px;
+      width: 100%;
+    }
+    .hero-image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
     /* Responsive adjustments */
     @media (max-width: 640px) {
       .offer-box {
@@ -347,8 +402,8 @@
     </div>
   </div>
 
-  <!-- Header -->
-  <header>
+  <!-- Minimal Landing Page Header -->
+  <header class="lp-header">
     <div class="container">
       <a href="index.html" class="logo">
         <picture>
@@ -357,25 +412,12 @@
         </picture>
         <h1>MGE California<br><span>Premier Auto Service &amp; Repair</span></h1>
       </a>
-      <nav id="nav">
-        <button class="nav-close" id="navClose" aria-label="Close navigation menu" style="display:none">&times;</button>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="specials.html">Specials</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="mission.html">Our Mission</a></li>
-          <li><a href="warranty.html">Warranty</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="directions.html">Directions</a></li>
-          <li><a href="appointments.html" class="btn-appointment">Book Now</a></li>
-        </ul>
-      </nav>
-      <div class="hamburger" id="hamburger" aria-label="Open navigation menu" role="button" tabindex="0">
-        <span></span><span></span><span></span>
+      <div class="lp-header-right">
+        <a href="tel:+13105468999" class="lp-header-phone">(310) 546-8999</a>
+        <a href="appointments.html" class="btn btn-primary" style="font-size: 0.82rem; padding: 10px 20px;">Book Free Brake Inspection</a>
       </div>
     </div>
   </header>
-  <div class="overlay" id="overlay"></div>
 
   <!-- ===== HERO SECTION ===== -->
   <section class="hero">
@@ -384,44 +426,48 @@
         <div class="hero-badges">
           <span class="badge gold">Free Offer — No Obligation</span>
         </div>
-        <h2>Squeaky Brakes? Get a <span>Free Inspection</span> in the South Bay</h2>
+        <h2>Free Brake Inspection in <span>Hawthorne &amp; the South Bay</span></h2>
         <p style="font-size: 1.05rem; color: rgba(255,255,255,0.85); margin-bottom: 24px;">Drive with confidence. Our technicians inspect your brakes and give honest, no-pressure recommendations — completely free on most vehicles.</p>
         <div class="hero-buttons">
           <a href="appointments.html" class="btn btn-primary">Book Free Brake Inspection</a>
           <a href="tel:+13105468999" class="btn btn-outline">Call Now (310) 546-8999</a>
         </div>
         <!-- Trust bullets -->
-        <ul style="list-style: none; padding: 0; margin: 18px 0 0; display: flex; flex-wrap: wrap; gap: 10px 24px;">
-          <li style="font-size: 0.82rem; color: rgba(255,255,255,0.65); display: flex; align-items: center; gap: 6px;"><span style="color: #2A9D8F; font-weight: 700;">&#10003;</span> Trusted South Bay Auto Repair</li>
-          <li style="font-size: 0.82rem; color: rgba(255,255,255,0.65); display: flex; align-items: center; gap: 6px;"><span style="color: #2A9D8F; font-weight: 700;">&#10003;</span> Most Makes &amp; Models</li>
-          <li style="font-size: 0.82rem; color: rgba(255,255,255,0.65); display: flex; align-items: center; gap: 6px;"><span style="color: #2A9D8F; font-weight: 700;">&#10003;</span> Fast, Honest Service</li>
+        <ul style="list-style: none; padding: 0; margin: 18px 0 0; display: flex; flex-wrap: wrap; gap: 8px 22px;">
+          <li style="font-size: 0.8rem; color: rgba(255,255,255,0.65); display: flex; align-items: center; gap: 6px;"><span style="color: #2A9D8F; font-weight: 700;">&#10003;</span> 3-Year Unlimited Mileage Warranty</li>
+          <li style="font-size: 0.8rem; color: rgba(255,255,255,0.65); display: flex; align-items: center; gap: 6px;"><span style="color: #2A9D8F; font-weight: 700;">&#10003;</span> Trusted South Bay Auto Repair</li>
+          <li style="font-size: 0.8rem; color: rgba(255,255,255,0.65); display: flex; align-items: center; gap: 6px;"><span style="color: #2A9D8F; font-weight: 700;">&#10003;</span> Most Makes &amp; Models</li>
         </ul>
         <!-- Intro paragraph -->
         <p style="margin-top: 28px; font-size: 0.95rem; color: rgba(255,255,255,0.7); max-width: 520px; line-height: 1.65; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 22px;">Your brakes are your vehicle's most important safety system. If you're hearing noise, feeling vibration, or unsure about performance, now is the time to get them checked. Bring your vehicle in for a free brake inspection and get clear answers fast.</p>
         <!-- What Happens Next -->
         <div style="margin-top: 28px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 20px 24px;">
-          <p style="font-family: 'Oswald', sans-serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: #2A9D8F; margin-bottom: 12px;">What Happens Next:</p>
-          <ol style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px;">
-            <li style="font-size: 0.88rem; color: rgba(255,255,255,0.75); display: flex; align-items: center; gap: 12px;">
-              <span style="background: #E4572E; color: #fff; font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 0.8rem; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</span>
+          <p style="font-family: 'Oswald', sans-serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: #2A9D8F; margin-bottom: 14px;">What Happens Next:</p>
+          <ol style="list-style: none; padding: 0; margin: 0; counter-reset: steps;">
+            <li style="font-size: 0.88rem; color: rgba(255,255,255,0.8); display: flex; align-items: center; gap: 12px; padding: 5px 0;">
+              <span style="background: #E4572E; color: #fff; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 0.78rem; min-width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; line-height: 1;">1</span>
               Book your appointment
             </li>
-            <li style="font-size: 0.88rem; color: rgba(255,255,255,0.75); display: flex; align-items: center; gap: 12px;">
-              <span style="background: #E4572E; color: #fff; font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 0.8rem; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</span>
+            <li style="font-size: 0.88rem; color: rgba(255,255,255,0.8); display: flex; align-items: center; gap: 12px; padding: 5px 0;">
+              <span style="background: #E4572E; color: #fff; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 0.78rem; min-width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; line-height: 1;">2</span>
               Bring your vehicle in
             </li>
-            <li style="font-size: 0.88rem; color: rgba(255,255,255,0.75); display: flex; align-items: center; gap: 12px;">
-              <span style="background: #E4572E; color: #fff; font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 0.8rem; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</span>
-              Get a full brake inspection + clear recommendation
+            <li style="font-size: 0.88rem; color: rgba(255,255,255,0.8); display: flex; align-items: center; gap: 12px; padding: 5px 0;">
+              <span style="background: #E4572E; color: #fff; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 0.78rem; min-width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; line-height: 1;">3</span>
+              Get a full brake inspection and clear recommendation
             </li>
           </ol>
         </div>
-        <!-- Urgency line -->
-        <p style="margin-top: 18px; font-size: 0.8rem; color: #E8C14B; font-weight: 600; letter-spacing: 0.02em;">&#9888; Limited availability — same-week appointments fill quickly.</p>
+        <!-- Urgency + local line -->
+        <p style="margin-top: 16px; font-size: 0.8rem; color: #E8C14B; font-weight: 600; letter-spacing: 0.02em;">&#9888; Limited availability — same-week appointments fill quickly.</p>
+        <p style="margin-top: 8px; font-size: 0.78rem; color: rgba(255,255,255,0.45);">Serving Hawthorne, Torrance, Redondo Beach, Manhattan Beach, and nearby South Bay areas.</p>
       </div>
       <div class="hero-visual">
-        <div class="hero-graphic">
-          <div class="icon-gear">&#9951;</div>
+        <div class="hero-image-wrap">
+          <picture>
+            <source srcset="images/brakespecialist.webp" type="image/webp">
+            <img src="images/brakespecialist.jpg" alt="MGE California brake technician performing a brake inspection">
+          </picture>
         </div>
       </div>
     </div>
@@ -482,7 +528,7 @@
           <li>Available for most makes &amp; models</li>
           <li>Staffed by experienced, certified technicians</li>
         </ul>
-        <a href="appointments.html" class="btn btn-primary" style="font-size: 1rem; padding: 14px 36px;">Claim Your Free Inspection</a>
+        <a href="appointments.html" class="btn btn-primary" style="font-size: 1rem; padding: 14px 36px;">Book Free Brake Inspection</a>
         <p style="margin-top: 16px; font-size: 0.8rem; color: #90A4AE;">Or call us at <a href="tel:+13105468999" style="color: #2A9D8F; font-weight: 600;">(310) 546-8999</a></p>
       </div>
     </div>
@@ -522,32 +568,6 @@
           <h3>Local &amp; Community-Focused</h3>
           <p>We're your neighbors. MGE California is proudly rooted in the South Bay community and committed to keeping our roads safe.</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== TRUST / TESTIMONIALS SECTION ===== -->
-  <section class="section section-light" style="padding: 80px 0;">
-    <div class="container">
-      <div class="section-title">
-        <div class="underline"></div>
-        <h2>What South Bay Drivers Are Saying</h2>
-        <p>Real feedback from customers who trusted us with their brakes.</p>
-      </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 860px; margin: 32px auto 0;">
-        <div class="testimonial-card">
-          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="quote">"I came in for the free brake inspection expecting a sales pitch. Instead they gave me an honest assessment, showed me exactly what was worn, and quoted a fair price upfront. No pressure at all. Earned a customer for life."</p>
-          <p class="attribution">— Verified Customer, Torrance CA</p>
-        </div>
-        <div class="testimonial-card">
-          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="quote">"My brakes had been squealing for weeks and I kept putting it off. MGE got me in same day, did the inspection for free, and had everything fixed by the afternoon. Fast, friendly, and totally transparent on pricing."</p>
-          <p class="attribution">— Verified Customer, Redondo Beach CA</p>
-        </div>
-      </div>
-      <div style="text-align: center; margin-top: 40px;">
-        <a href="appointments.html" class="btn btn-primary">Book My Free Inspection</a>
       </div>
     </div>
   </section>
