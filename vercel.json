@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/free-brake-inspection",
+      "destination": "/free-brake-inspection.html"
+    },
+    {
       "source": "/api/appointment",
       "destination": "https://mohammedelokour.app.n8n.cloud/webhook/mge-appointment"
     }

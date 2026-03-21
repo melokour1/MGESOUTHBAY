@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get a FREE brake inspection on most vehicles at MGE California in Hawthorne, CA. Serving the South Bay — Torrance, Redondo Beach, Manhattan Beach and more. No obligation. Honest recommendations.">
+  <title>Free Brake Inspection | MGE California - South Bay Auto Repair</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MGE California">
+  <meta property="og:title" content="Free Brake Inspection | MGE California - South Bay">
+  <meta property="og:description" content="Get a FREE brake inspection on most vehicles at MGE California. Honest recommendations. No pressure. Serving the South Bay.">
+  <meta property="og:url" content="https://mgesouthbay.com/free-brake-inspection">
+  <meta property="og:image" content="https://mgesouthbay.com/images/our_promise_photo.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Free Brake Inspection | MGE California - South Bay">
+  <meta name="twitter:description" content="Get a FREE brake inspection on most vehicles at MGE California. Honest recommendations. No pressure. Serving the South Bay.">
+  <meta name="twitter:image" content="https://mgesouthbay.com/images/our_promise_photo.jpg">
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "MGE California",
+    "url": "https://mgesouthbay.com",
+    "telephone": "+1-310-546-8999",
+    "email": "SameDayAutoServices@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "13900 Inglewood Ave",
+      "addressLocality": "Hawthorne",
+      "addressRegion": "CA",
+      "postalCode": "90250",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "16:00"
+      }
+    ]
+  }
+  </script>
+  <style>
+    /* ===== PAGE-SPECIFIC STYLES ===== */
+
+    /* Brake symptom list */
+    .symptom-list {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+      margin-top: 32px;
+    }
+    .symptom-list li {
+      background: #fff;
+      border-left: 4px solid #E4572E;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      font-size: 0.95rem;
+      color: #37474F;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .symptom-list li .symptom-icon {
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+
+    /* Offer highlight box */
+    .offer-box {
+      background: #fff;
+      border: 2px solid #2A9D8F;
+      border-radius: 12px;
+      padding: 40px 48px;
+      max-width: 700px;
+      margin: 0 auto;
+      box-shadow: 0 8px 40px rgba(42,157,143,0.12);
+      text-align: center;
+    }
+    .offer-box .offer-badge {
+      display: inline-block;
+      background: #E4572E;
+      color: #fff;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 5px 18px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    .offer-box h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2rem;
+      color: #0D2B3E;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .offer-box p {
+      color: #546E7A;
+      font-size: 1rem;
+      margin-bottom: 24px;
+    }
+    .offer-bullets {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 28px;
+      text-align: left;
+      display: inline-block;
+    }
+    .offer-bullets li {
+      padding: 7px 0;
+      color: #37474F;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .offer-bullets li::before {
+      content: "✓";
+      color: #2A9D8F;
+      font-weight: 700;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    /* Why choose us grid */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 36px;
+    }
+    .why-item {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 24px 20px;
+      text-align: center;
+    }
+    .why-item .why-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+    .why-item h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1rem;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+    .why-item p {
+      color: #B0BEC5;
+      font-size: 0.88rem;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* Testimonial cards */
+    .testimonial-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 28px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+      border-left: 4px solid #2A9D8F;
+    }
+    .testimonial-card p.quote {
+      color: #37474F;
+      font-size: 0.95rem;
+      font-style: italic;
+      margin-bottom: 14px;
+    }
+    .testimonial-card p.attribution {
+      color: #2A9D8F;
+      font-weight: 700;
+      font-size: 0.85rem;
+      margin: 0;
+    }
+    .stars {
+      color: #E8C14B;
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    /* Service area cities */
+    .cities-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 28px;
+    }
+    .city-pill {
+      background: #fff;
+      border: 1px solid #B0BEC5;
+      border-radius: 20px;
+      padding: 8px 20px;
+      font-size: 0.9rem;
+      color: #37474F;
+      font-weight: 500;
+    }
+
+    /* FAQ accordion */
+    .faq-list {
+      max-width: 760px;
+      margin: 32px auto 0;
+    }
+    .faq-item {
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .faq-item:first-child {
+      border-top: 1px solid #e0e0e0;
+    }
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      padding: 20px 0;
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.05rem;
+      color: #0D2B3E;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .faq-question:hover {
+      color: #E4572E;
+    }
+    .faq-question .faq-arrow {
+      flex-shrink: 0;
+      font-size: 0.8rem;
+      transition: transform 0.25s;
+      color: #2A9D8F;
+    }
+    .faq-question[aria-expanded="true"] .faq-arrow {
+      transform: rotate(180deg);
+    }
+    .faq-answer {
+      display: none;
+      padding: 0 0 20px;
+      color: #546E7A;
+      font-size: 0.95rem;
+      line-height: 1.65;
+    }
+    .faq-answer.open {
+      display: block;
+    }
+
+    /* Urgency banner */
+    .urgency-banner {
+      background: #E4572E;
+      color: #fff;
+      text-align: center;
+      padding: 12px 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    /* Final CTA section */
+    .final-cta {
+      background: #0D2B3E;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .final-cta h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2.2rem;
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .final-cta h2 span {
+      color: #E4572E;
+    }
+    .final-cta p {
+      color: #B0BEC5;
+      font-size: 1rem;
+      margin-bottom: 32px;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .final-cta .cta-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .final-cta .trust-note {
+      margin-top: 20px;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.45);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 640px) {
+      .offer-box {
+        padding: 28px 20px;
+      }
+      .offer-box h2 {
+        font-size: 1.6rem;
+      }
+      .final-cta h2 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Urgency Bar -->
+  <div class="urgency-banner">
+    Limited Spots Available This Week — Book Your Free Brake Inspection Today
+  </div>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="hours">Mon - Fri: 8:00 AM - 6:00 PM | Sat: 9:00 AM - 4:00 PM</div>
+      <div>Call Us: <a href="tel:+13105468999">(310) 546-8999</a> <a href="sms:+13105468999" class="sms-link">Text Us</a></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <picture>
+          <source srcset="images/logo.webp" type="image/webp">
+          <img src="images/logo.png" alt="MGE California Logo" class="logo-img">
+        </picture>
+        <h1>MGE California<br><span>Premier Auto Service &amp; Repair</span></h1>
+      </a>
+      <nav id="nav">
+        <button class="nav-close" id="navClose" aria-label="Close navigation menu" style="display:none">&times;</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="specials.html">Specials</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="mission.html">Our Mission</a></li>
+          <li><a href="warranty.html">Warranty</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="directions.html">Directions</a></li>
+          <li><a href="appointments.html" class="btn-appointment">Book Now</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger" id="hamburger" aria-label="Open navigation menu" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+  <div class="overlay" id="overlay"></div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badges">
+          <span class="badge gold">Free Offer — No Obligation</span>
+        </div>
+        <h2>Brake Repair in the South Bay <span>You Can Trust</span></h2>
+        <p>Get a FREE brake inspection on most vehicles and drive with confidence. Honest recommendations. No pressure.</p>
+        <div class="hero-buttons">
+          <a href="appointments.html" class="btn btn-primary">Book Free Brake Inspection</a>
+          <a href="tel:+13105468999" class="btn btn-outline">Call Now</a>
+        </div>
+        <p style="font-size: 0.78rem; color: rgba(255,255,255,0.5); margin-top: 14px;">&#10003; No upselling &nbsp;•&nbsp; &#10003; Certified technicians &nbsp;•&nbsp; &#10003; Most makes &amp; models</p>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-graphic">
+          <div class="icon-gear">&#9951;</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROBLEM SECTION ===== -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-title">
+        <div class="underline"></div>
+        <h2>Is Your Car Trying to Tell You Something?</h2>
+        <p>Brake problems rarely fix themselves — and delaying a repair can put you and your family at risk. If you're noticing any of these symptoms, don't wait.</p>
+      </div>
+      <ul class="symptom-list">
+        <li>
+          <span class="symptom-icon">&#128266;</span>
+          <span><strong>Squealing or grinding noise</strong> when braking</span>
+        </li>
+        <li>
+          <span class="symptom-icon">&#128663;</span>
+          <span><strong>Car pulls to one side</strong> when you brake</span>
+        </li>
+        <li>
+          <span class="symptom-icon">&#9889;</span>
+          <span><strong>Brake pedal feels soft</strong> or sinks to the floor</span>
+        </li>
+        <li>
+          <span class="symptom-icon">&#128165;</span>
+          <span><strong>Steering wheel vibrates</strong> during braking</span>
+        </li>
+        <li>
+          <span class="symptom-icon">&#128308;</span>
+          <span><strong>Brake warning light</strong> is on</span>
+        </li>
+        <li>
+          <span class="symptom-icon">&#128336;</span>
+          <span><strong>Longer stopping distance</strong> than usual</span>
+        </li>
+      </ul>
+      <p style="text-align: center; margin-top: 32px; color: #546E7A; font-size: 0.95rem; max-width: 580px; margin-left: auto; margin-right: auto;">Worn brakes don't just risk a ticket — they're one of the leading causes of accidents. The sooner you get an inspection, the safer you'll be.</p>
+      <div style="text-align: center; margin-top: 28px;">
+        <a href="appointments.html" class="btn btn-primary">Book Free Brake Inspection</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OFFER SECTION ===== -->
+  <section class="section" style="background: #f0f4f8; padding: 80px 0;">
+    <div class="container">
+      <div class="offer-box">
+        <span class="offer-badge">Limited-Time Offer</span>
+        <h2>Free Brake Inspection on Most Vehicles</h2>
+        <p>Bring your vehicle in and our ASE-certified technicians will perform a complete brake system inspection — pads, rotors, calipers, lines, and fluid — at absolutely no charge.</p>
+        <ul class="offer-bullets">
+          <li>No obligation — walk away with honest information</li>
+          <li>Transparent, upfront pricing before any work begins</li>
+          <li>Fast turnaround — most inspections completed same day</li>
+          <li>Available for most makes &amp; models</li>
+          <li>Staffed by experienced, certified technicians</li>
+        </ul>
+        <a href="appointments.html" class="btn btn-primary" style="font-size: 1rem; padding: 14px 36px;">Claim Your Free Inspection</a>
+        <p style="margin-top: 16px; font-size: 0.8rem; color: #90A4AE;">Or call us at <a href="tel:+13105468999" style="color: #2A9D8F; font-weight: 600;">(310) 546-8999</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US SECTION ===== -->
+  <section class="section" style="background: #0D2B3E; padding: 80px 0;">
+    <div class="container">
+      <div class="section-title">
+        <div class="underline"></div>
+        <h2 style="color: #fff;">Why South Bay Drivers Choose MGE California</h2>
+        <p style="color: #B0BEC5;">We've built our reputation one honest repair at a time.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="why-icon">&#127942;</div>
+          <h3>Years of Experience</h3>
+          <p>Our technicians bring decades of combined experience servicing all makes and models — domestic, foreign, and fleet.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">&#9989;</div>
+          <h3>Honesty First</h3>
+          <p>We tell you exactly what your car needs — nothing more, nothing less. No upselling. No scare tactics.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">&#128274;</div>
+          <h3>Transparent Pricing</h3>
+          <p>You'll always know the cost before we start. No surprise fees. No hidden charges on your final invoice.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">&#9201;</div>
+          <h3>Fast Turnaround</h3>
+          <p>We respect your time. Most brake jobs and inspections are completed the same day you bring your vehicle in.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">&#127967;</div>
+          <h3>Local &amp; Community-Focused</h3>
+          <p>We're your neighbors. MGE California is proudly rooted in the South Bay community and committed to keeping our roads safe.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST / TESTIMONIALS SECTION ===== -->
+  <section class="section section-light" style="padding: 80px 0;">
+    <div class="container">
+      <div class="section-title">
+        <div class="underline"></div>
+        <h2>What South Bay Drivers Are Saying</h2>
+        <p>Real feedback from customers who trusted us with their brakes.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 860px; margin: 32px auto 0;">
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="quote">"I came in for the free brake inspection expecting a sales pitch. Instead they gave me an honest assessment, showed me exactly what was worn, and quoted a fair price upfront. No pressure at all. Earned a customer for life."</p>
+          <p class="attribution">— Verified Customer, Torrance CA</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="quote">"My brakes had been squealing for weeks and I kept putting it off. MGE got me in same day, did the inspection for free, and had everything fixed by the afternoon. Fast, friendly, and totally transparent on pricing."</p>
+          <p class="attribution">— Verified Customer, Redondo Beach CA</p>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="appointments.html" class="btn btn-primary">Book My Free Inspection</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICE AREA SECTION ===== -->
+  <section class="section" style="background: #f0f4f8; padding: 60px 0; text-align: center;">
+    <div class="container">
+      <div class="section-title">
+        <div class="underline"></div>
+        <h2>Proudly Serving the South Bay</h2>
+        <p>Located at 13900 Inglewood Ave, Hawthorne — convenient to drivers across the South Bay area.</p>
+      </div>
+      <div class="cities-grid">
+        <span class="city-pill">Hawthorne</span>
+        <span class="city-pill">Torrance</span>
+        <span class="city-pill">Redondo Beach</span>
+        <span class="city-pill">Manhattan Beach</span>
+        <span class="city-pill">Lawndale</span>
+        <span class="city-pill">Gardena</span>
+        <span class="city-pill">Inglewood</span>
+        <span class="city-pill">El Segundo</span>
+        <span class="city-pill">Lomita</span>
+        <span class="city-pill">Carson</span>
+      </div>
+      <p style="margin-top: 28px; color: #546E7A; font-size: 0.9rem;">Not on the list? Give us a call — we service drivers from all over the greater Los Angeles area.</p>
+    </div>
+  </section>
+
+  <!-- ===== FAQ SECTION ===== -->
+  <section class="section section-light" style="padding: 80px 0;">
+    <div class="container">
+      <div class="section-title">
+        <div class="underline"></div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know about our free brake inspection.</p>
+      </div>
+      <div class="faq-list" id="faqList">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Is the brake inspection really free?
+            <span class="faq-arrow">&#9660;</span>
+          </button>
+          <div class="faq-answer">
+            Yes — completely free, with no strings attached. We'll inspect your entire brake system including pads, rotors, calipers, brake lines, and fluid level. If we find anything that needs attention, we'll show you exactly what it is and give you a written quote. You decide whether to proceed — no pressure.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What vehicles qualify for the free brake inspection?
+            <span class="faq-arrow">&#9660;</span>
+          </button>
+          <div class="faq-answer">
+            The free inspection is available on most passenger cars, trucks, and SUVs. This includes domestic, foreign, and import vehicles. If you're unsure whether your vehicle qualifies, give us a quick call at <a href="tel:+13105468999" style="color: #2A9D8F; font-weight: 600;">(310) 546-8999</a> and we'll let you know right away.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How long does the brake inspection take?
+            <span class="faq-arrow">&#9660;</span>
+          </button>
+          <div class="faq-answer">
+            Most brake inspections are completed within 30–45 minutes. We'll get your car up on the lift, take a thorough look at all four corners, and walk you through our findings. If repairs are needed and you choose to proceed, most standard brake jobs can be completed the same day.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do I need to make an appointment?
+            <span class="faq-arrow">&#9660;</span>
+          </button>
+          <div class="faq-answer">
+            Booking an appointment is highly recommended to secure your spot — availability fills up quickly, especially for same-day service. You can book online in just a few clicks or call us at <a href="tel:+13105468999" style="color: #2A9D8F; font-weight: 600;">(310) 546-8999</a>. Walk-ins are welcome but subject to technician availability.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA SECTION ===== -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Don't Wait Until Your Brakes <span>Fail You</span></h2>
+      <p>Spots fill up fast. Book your free brake inspection today and drive with confidence knowing your vehicle is safe.</p>
+      <div class="cta-buttons">
+        <a href="appointments.html" class="btn btn-primary" style="font-size: 1rem; padding: 14px 36px;">Book Free Brake Inspection</a>
+        <a href="tel:+13105468999" class="btn btn-outline" style="font-size: 1rem; padding: 14px 36px;">Call (310) 546-8999</a>
+      </div>
+      <p class="trust-note">&#10003; No obligation &nbsp;•&nbsp; &#10003; Same-day availability &nbsp;•&nbsp; &#10003; 13900 Inglewood Ave, Hawthorne CA</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <picture>
+              <source srcset="images/logo.webp" type="image/webp">
+              <img src="images/logo.png" alt="MGE California Logo">
+            </picture>
+            <span>MGE California</span>
+          </div>
+          <p>Your trusted neighborhood auto repair shop in the South Bay. We provide expert service for all makes and models with a commitment to honesty, quality, and customer satisfaction.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="appointments.html">Appointments</a></li>
+            <li><a href="warranty.html">Warranty</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="mission.html">Our Mission</a></li>
+            <li><a href="directions.html">Directions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="tel:+13105468999" style="color: inherit;">(310) 546-8999</a> <a href="sms:+13105468999" class="sms-link" style="color: inherit;">Text Us</a></li>
+            <li>SameDayAutoServices@gmail.com</li>
+            <li>13900 Inglewood Ave, Hawthorne, CA 90250</li>
+            <li>Mon-Fri: 8AM - 6PM</li>
+            <li>Sat: 9AM - 4PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 MGE California. All Rights Reserved.
+        <p style="margin-top: 5px; font-size: 11px;"><a href="privacy.html" style="color: #B0BEC5; text-decoration: none;">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <!-- FAQ accordion for this page -->
+  <script>
+    (function () {
+      var faqList = document.getElementById('faqList');
+      if (!faqList) return;
+      var questions = faqList.querySelectorAll('.faq-question');
+      questions.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var answer = btn.nextElementSibling;
+          var isOpen = btn.getAttribute('aria-expanded') === 'true';
+          // Close all
+          questions.forEach(function (b) {
+            b.setAttribute('aria-expanded', 'false');
+            b.nextElementSibling.classList.remove('open');
+          });
+          // Toggle clicked
+          if (!isOpen) {
+            btn.setAttribute('aria-expanded', 'true');
+            answer.classList.add('open');
+          }
+        });
+      });
+    })();
+  </script>
+
+  <a href="appointments.html" class="sticky-book-now" aria-label="Book an appointment">Book Now</a>
+</body>
+</html>
