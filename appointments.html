@@ -515,10 +515,10 @@
       try {
         result = await response.json();
       } catch {
-        result = { success: response.ok };
+        result = { success: false };
       }
 
-      if (response.ok && result.success !== false) {
+      if (response.ok && result.success === true) {
         showSuccessMessage(formData.firstName);
       } else {
         showErrorWithFallback(result.message || 'Our online booking system is temporarily unavailable.', fallbackMailto);
