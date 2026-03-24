@@ -1,9 +1,16 @@
 {
+  "cleanUrls": false,
   "rewrites": [
-    {
-      "source": "/free-brake-inspection",
-      "destination": "/free-brake-inspection.html"
-    },
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/services", "destination": "/services.html" },
+    { "source": "/appointments", "destination": "/appointments.html" },
+    { "source": "/specials", "destination": "/specials.html" },
+    { "source": "/faq", "destination": "/faq.html" },
+    { "source": "/directions", "destination": "/directions.html" },
+    { "source": "/mission", "destination": "/mission.html" },
+    { "source": "/warranty", "destination": "/warranty.html" },
+    { "source": "/privacy", "destination": "/privacy.html" },
+    { "source": "/free-brake-inspection", "destination": "/free-brake-inspection.html" },
     {
       "source": "/api/appointment",
       "destination": "https://mohammedelokour.app.n8n.cloud/webhook/mge-appointment"
